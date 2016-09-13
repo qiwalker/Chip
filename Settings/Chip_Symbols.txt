@@ -4,15 +4,15 @@ Sys.Min_Z~Real~0~False~False~True~
 Sys.Max_X~Real~35~False~False~True~
 Sys.Max_Y~Real~28~False~False~True~
 Sys.Max_Z~Real~6~False~False~True~
-Sys.Abs_X~Real~5.129~False~False~True~
-Sys.Abs_Y~Real~6.457~False~False~True~
-Sys.Abs_Z~Real~6~False~False~True~
-Sys.Work_X~Real~5.129~False~False~True~
-Sys.Work_Y~Real~6.457~False~False~True~
-Sys.Work_Z~Real~6~False~False~True~
-Sys.Offset_X~Real~2.122~False~False~True~
-Sys.Offset_Y~Real~3.216~False~False~True~
-Sys.Offset_Z~Real~-0.042~False~False~True~
+Sys.Abs_X~Real~2.297~False~False~True~
+Sys.Abs_Y~Real~4.663~False~False~True~
+Sys.Abs_Z~Real~5.364~False~False~True~
+Sys.Work_X~Real~2.297~False~False~True~
+Sys.Work_Y~Real~4.663~False~False~True~
+Sys.Work_Z~Real~5.364~False~False~True~
+Sys.Offset_X~Real~2.297~False~False~True~
+Sys.Offset_Y~Real~3.492~False~False~True~
+Sys.Offset_Z~Real~3.554~False~False~True~
 Sys.Offset.Z_Zero_Set~Logical~False~False~False~True~
 Sys.Velocity~Real~0~False~False~True~
 Sys.Coordinate_System~Whole~1~False~False~True~
@@ -31,6 +31,7 @@ Sys.Coolant_Delay~Real~2~False~False~True~
 Sys.Soft_Limits_Enabled~Logical~True~False~False~True~
 Sys.Rapid_Feedrate~Real~60~False~False~True~
 Sys.Move_Raise_Z~Logical~True~False~False~True~
+Sys.Move_Set_Gap~Logical~True~False~False~True~
 Sys.Command.Download_Settings~Command~~False~False~True~
 Sys.Command.Reset_Controller~Command~~False~False~True~
 Sys.Command.Internal_E_Stop~Command~~False~False~True~
@@ -54,8 +55,8 @@ Sys.Folder.Preferances~Text~C:\Dot_Net_Dev\CNC_Mill\CNC_Settings~False~False~Tru
 Sys.GCode_File_Extension~Text~chp~False~False~True~
 Color.Tab_Page~Text~DarkKhaki~False~False~False~
 Color.Top_Panel~Text~Beige~False~False~False~
-Folder.Fixture_Offsets~Text~C:\Chip_Files\Fixture_Offsets\Frame_Fixture.off~False~False~True~
-Folder.Probe_Setups~Text~C:\Old Man\Frame_Fixture_Move_Settings.set~False~False~True~
+Folder.Probe_Positions~Text~C:\Old_Man\Fixture_Probing_Positons~False~False~True~
+Folder.Probe_Positions.File~Text~Table_Probe_Positions.txt~False~False~True~
 Folder.G_Code~Text~C:\Chip~False~False~True~
 Process_Box~Process~Process~False~False~True~
 Process_Box.GCode.Program~Process_GCode~Program~False~False~True~
@@ -64,7 +65,7 @@ Process_Box.GCode.Process~Process_GCode~Process~False~False~True~
 Process_Box.Drawing.Program~Process_Drawing~Program~False~False~True~
 Process_Box.Drawing.MDI~Process_Drawing~MDI~False~False~True~
 Wizard.Dialog~Dialog_Box~Wizard~False~False~True~
-Wizard_Dialog.GCode~Dialog_GCode~C:\Old Man\Fixture Flatten 2.05 fly cutter.chp~False~False~True~
+Wizard_Dialog.GCode~Dialog_GCode~C:\Old_Man\Products\Jewelry Box Solid\MAN\G Code\Inlay\6_2 Deep Wing Spots 0_020 EN 3D.chp~False~False~True~
 Wizard_Dialog.Drawing~Process_Drawing~Wizard~False~False~True~
 Jog_Rate.Selected~Real~50~False~False~False~
 Jog_Rate.Step_Mode~Logical~False~False~False~False~
@@ -99,156 +100,170 @@ Button.Coolant~Toggle~False~False~False~False~Coolant_Button~~~Coolant_On.png~Co
 Button.Set.X~Label~False~False~False~False~Set_Axis_Button~~Set~Green_Bar_On.png~Green_Bar_Off.png~Tab_Offsets~40~5~71~27~Beige~ControlText~32~Microsoft Sans Serif, 12,Bold~True~True~
 Button.Set.Y~Label~False~False~False~False~Set_Axis_Button~~Set~Green_Bar_On.png~Green_Bar_Off.png~Tab_Offsets~75~5~71~27~Beige~ControlText~32~Microsoft Sans Serif, 12,Bold~True~True~
 Button.Set.Z~Label~False~False~False~False~Set_Axis_Button~~Set~Green_Bar_On.png~Green_Bar_Off.png~Tab_Offsets~110~5~71~27~Beige~ControlText~32~Microsoft Sans Serif, 12,Bold~True~True~
-Button.Jog.X_Plus~Button~False~False~False~False~Jog_Button_Down~Jog_Button_Up~X~Arrow_Right.png~Arrow_Right_Pressed.png~Tab_Jog_Probe~401~424~100~100~DarkKhaki~ControlText~32~Microsoft Sans Serif, 24,Bold~True~False~
-Button.Jog.X_Minus~Button~False~False~False~False~Jog_Button_Down~Jog_Button_Up~X~Arrow_Left.png~Arrow_Left_Pressed.png~Tab_Jog_Probe~401~212~100~100~DarkKhaki~ControlText~32~Microsoft Sans Serif, 24,Bold~True~False~
-Button.Jog.Y_Plus~Button~False~False~False~False~Jog_Button_Down~Jog_Button_Up~Y~Arrow_Up.png~Arrow_Up_Pressed.png~Tab_Jog_Probe~348~317~100~100~DarkKhaki~ControlText~32~Microsoft Sans Serif, 24,Bold~True~False~
-Button.Jog.Y_Minus~Button~False~False~False~False~Jog_Button_Down~Jog_Button_Up~Y~Arrow_Down.png~Arrow_Down_Pressed.png~Tab_Jog_Probe~453~318~100~100~DarkKhaki~ControlText~32~Microsoft Sans Serif, 24,Bold~True~False~
-Button.Jog.Z_Plus~Button~False~False~False~False~Jog_Button_Down~Jog_Button_Up~Z~Red_Arrow_Up.png~Red_Arrow_Up_Pressed.png~Tab_Jog_Probe~352~530~100~100~DarkKhaki~ControlText~32~Microsoft Sans Serif, 24,Bold~True~False~
-Button.Jog.Z_Minus~Button~False~False~False~False~Jog_Button_Down~Jog_Button_Up~Z~Red_Arrow_Down.png~Red_Arrow_Down_Pressed.png~Tab_Jog_Probe~457~530~100~100~DarkKhaki~ControlText~32~Microsoft Sans Serif, 24,Bold~True~False~
-Button.Jog_Rate.Fast~Label~True~False~False~False~Jog_Select_Button~~Fast~Green_Bar_Off.png~Green_Bar_On.png~Tab_Jog_Probe~354~96~97~29~DarkKhaki~ControlText~32~Microsoft Sans Serif, 12,Bold~True~False~
-Button.Jog_Rate.Slow~Label~False~False~False~False~Jog_Select_Button~~Slow~Green_Bar_Off.png~Green_Bar_On.png~Tab_Jog_Probe~389~95~97~29~DarkKhaki~ControlText~32~Microsoft Sans Serif, 12,Bold~True~False~
-Button.Jog_Rate.Creep~Label~False~False~False~False~Jog_Select_Button~~Creep~Green_Bar_Off.png~Green_Bar_On.png~Tab_Jog_Probe~424~96~97~29~DarkKhaki~ControlText~32~Microsoft Sans Serif, 12,Bold~True~False~
-Button.Jog_Rate.Big_Step~Label~True~False~False~False~Jog_Select_Button~~Big~Green_Bar_Off.png~Green_Bar_On.png~Tab_Jog_Probe~459~95~97~29~DarkKhaki~ControlText~32~Microsoft Sans Serif, 12,Bold~True~False~
-Button.Jog_Rate.Little_Step~Label~True~False~False~False~Jog_Select_Button~~Little~Green_Bar_Off.png~Green_Bar_On.png~Tab_Jog_Probe~494~96~97~29~DarkKhaki~ControlText~32~Microsoft Sans Serif, 12,Bold~True~False~
-Button.Probe_Loaded~Label~False~False~False~False~Load_Probe~~Load Probe~Green_Bar_On.png~Green_Bar_Off.png~Tab_Offsets~148~953~133~36~Beige~ControlText~32~Microsoft Sans Serif, 12,Bold~True~True~
-Button.Probe.X_Plus~Button~False~False~False~False~Probe_Button~~X~Blue_Arrow_Right.png~Blue_Arrow_Right_Pressed.png~Tab_Jog_Probe~118~1189~100~100~DarkKhaki~DarkOrange~32~Microsoft Sans Serif, 24,Bold~True~False~
-Button.Probe.X_Minus~Button~False~False~False~False~Probe_Button~~X~Blue_Arrow_Left.png~Blue_Arrow_Left_Pressed.png~Tab_Jog_Probe~118~977~100~100~DarkKhaki~DarkOrange~32~Microsoft Sans Serif, 24,Bold~True~False~
-Button.Probe.Y_Plus~Button~False~False~False~False~Probe_Button~~Y~Blue_Arrow_Up.png~Blue_Arrow_Up_Pressed.png~Tab_Jog_Probe~13~1083~100~100~DarkKhaki~DarkOrange~32~Microsoft Sans Serif, 24,Bold~True~False~
-Button.Probe.Y_Minus~Button~False~False~False~False~Probe_Button~~Y~Blue_Arrow_Down.png~Blue_Arrow_Down_Pressed.png~Tab_Jog_Probe~223~1083~100~100~DarkKhaki~DarkOrange~32~Microsoft Sans Serif, 24,Bold~True~False~
-Button.Probe.Z_Minus~Button~False~False~False~False~Probe_Button~~Z~Red_Arrow_Center.png~Red_Arrow_Center_Pressed.png~Tab_Jog_Probe~117~1083~100~100~DarkKhaki~DarkOrange~32~Microsoft Sans Serif, 24,Bold~True~False~
-Button.Probe.Corner_NW~Button~False~False~False~False~Probe_Button~~~Blue_Arrow_NW.png~Blue_Arrow_NW_Pressed.png~Tab_Jog_Probe~12~977~100~100~DarkKhaki~ControlText~32~Microsoft Sans Serif, 24,Bold~True~False~
-Button.Probe.Corner_NE~Button~False~False~False~False~Probe_Button~~~Blue_Arrow_NE.png~Blue_Arrow_NE_Pressed.png~Tab_Jog_Probe~13~1189~100~100~DarkKhaki~ControlText~32~Microsoft Sans Serif, 24,Bold~True~False~
-Button.Probe.Corner_SW~Button~False~False~False~False~Probe_Button~~~Blue_Arrow_SW.png~Blue_Arrow_SW_Pressed.png~Tab_Jog_Probe~223~977~100~100~DarkKhaki~ControlText~32~Microsoft Sans Serif, 24,Bold~True~False~
-Button.Probe.Corner_SE~Button~False~False~False~False~Probe_Button~~~Blue_Arrow_SE.png~Blue_Arrow_SE_Pressed.png~Tab_Jog_Probe~224~1189~100~100~DarkKhaki~OrangeRed~32~Microsoft Sans Serif, 24,Bold~True~False~
-Button.Probe.Center~Button~False~False~False~False~Probe_Button~~Find Center~Green_Bar_On.png~Green_Bar_Off.png~Tab_Jog_Probe~15~592~171~39~DarkKhaki~ControlText~32~Microsoft Sans Serif, 12,Bold~True~False~
-Button.Probe.Center_Move_To_Center~Button~False~False~False~False~Probe_Move_To_Button~~Move to Center~Green_Bar_On.png~Green_Bar_Off.png~Tab_Jog_Probe~212~592~171~39~DarkKhaki~ControlText~32~Microsoft Sans Serif, 12,Bold~True~False~
-Button.Probe.Load~Button~False~False~False~False~Probe_Load_Save~~Load~Green_Bar_On.png~Green_Bar_Off.png~Tab_Jog_Probe~561~1190~100~39~DarkKhaki~ControlText~32~Microsoft Sans Serif, 12,Bold~True~False~
-Button.Probe.Save~Button~False~False~False~False~Probe_Load_Save~~Save~Green_Bar_On.png~Green_Bar_Off.png~Tab_Jog_Probe~520~1190~100~39~DarkKhaki~ControlText~32~Microsoft Sans Serif, 12,Bold~True~False~
-Button.Tool_Measure~Label~False~False~False~False~Tool_Measure_Button~~Measure Tool~Green_Bar_On.png~Green_Bar_Off.png~Tab_Offsets~148~791~133~36~Beige~ControlText~32~Microsoft Sans Serif, 12,Bold~True~True~
-Button.Move.X_Plus~Button~False~False~False~False~Move_Buttons~~X~Arrow_Right.png~Arrow_Right_Pressed.png~Tab_Jog_Probe~414~1190~100~100~DarkKhaki~ControlText~32~Microsoft Sans Serif, 24,Bold~True~False~
-Button.Move.X_Minus~Button~False~False~False~False~Move_Buttons~~X~Arrow_Left.png~Arrow_Left_Pressed.png~Tab_Jog_Probe~414~978~100~100~DarkKhaki~ControlText~32~Microsoft Sans Serif, 24,Bold~True~False~
-Button.Move.Y_Plus~Button~False~False~False~False~Move_Buttons~~Y~Arrow_Up.png~Arrow_Up_Pressed.png~Tab_Jog_Probe~361~1083~100~100~DarkKhaki~ControlText~32~Microsoft Sans Serif, 24,Bold~True~False~
-Button.Move.Y_Minus~Button~False~False~False~False~Move_Buttons~~Y~Arrow_Down.png~Arrow_Down_Pressed.png~Tab_Jog_Probe~466~1083~100~100~DarkKhaki~ControlText~32~Microsoft Sans Serif, 24,Bold~True~False~
-Button.Move.Z_Plus~Button~False~False~False~False~Move_Buttons~~Z~Red_Arrow_Up.png~Red_Arrow_Up_Pressed.png~Tab_Jog_Probe~361~872~100~100~DarkKhaki~ControlText~32~Microsoft Sans Serif, 24,Bold~True~False~
-Button.Move.Z_Minus~Button~False~False~False~False~Move_Buttons~~Z~Red_Arrow_Down.png~Red_Arrow_Down_Pressed.png~Tab_Jog_Probe~466~872~100~100~DarkKhaki~ControlText~32~Microsoft Sans Serif, 24,Bold~True~False~
+Button.Jog.X_Plus~Button~False~False~False~False~Jog_Button_Down~Jog_Button_Up~X~Arrow_Right.png~Arrow_Right_Pressed.png~Tab_Jog_Probe~401~424~100~100~DarkKhaki~ControlText~32~Microsoft Sans Serif, 24,Bold~True~True~
+Button.Jog.X_Minus~Button~False~False~False~False~Jog_Button_Down~Jog_Button_Up~X~Arrow_Left.png~Arrow_Left_Pressed.png~Tab_Jog_Probe~401~212~100~100~DarkKhaki~ControlText~32~Microsoft Sans Serif, 24,Bold~True~True~
+Button.Jog.Y_Plus~Button~False~False~False~False~Jog_Button_Down~Jog_Button_Up~Y~Arrow_Up.png~Arrow_Up_Pressed.png~Tab_Jog_Probe~348~317~100~100~DarkKhaki~ControlText~32~Microsoft Sans Serif, 24,Bold~True~True~
+Button.Jog.Y_Minus~Button~False~False~False~False~Jog_Button_Down~Jog_Button_Up~Y~Arrow_Down.png~Arrow_Down_Pressed.png~Tab_Jog_Probe~453~318~100~100~DarkKhaki~ControlText~32~Microsoft Sans Serif, 24,Bold~True~True~
+Button.Jog.Z_Plus~Button~False~False~False~False~Jog_Button_Down~Jog_Button_Up~Z~Red_Arrow_Up.png~Red_Arrow_Up_Pressed.png~Tab_Jog_Probe~352~530~100~100~DarkKhaki~ControlText~32~Microsoft Sans Serif, 24,Bold~True~True~
+Button.Jog.Z_Minus~Button~False~False~False~False~Jog_Button_Down~Jog_Button_Up~Z~Red_Arrow_Down.png~Red_Arrow_Down_Pressed.png~Tab_Jog_Probe~457~530~100~100~DarkKhaki~ControlText~32~Microsoft Sans Serif, 24,Bold~True~True~
+Button.Jog_Rate.Fast~Label~True~False~False~False~Jog_Select_Button~~Fast~Green_Bar_Off.png~Green_Bar_On.png~Tab_Jog_Probe~354~96~97~29~DarkKhaki~ControlText~32~Microsoft Sans Serif, 12,Bold~True~True~
+Button.Jog_Rate.Slow~Label~False~False~False~False~Jog_Select_Button~~Slow~Green_Bar_Off.png~Green_Bar_On.png~Tab_Jog_Probe~389~95~97~29~DarkKhaki~ControlText~32~Microsoft Sans Serif, 12,Bold~True~True~
+Button.Jog_Rate.Creep~Label~False~False~False~False~Jog_Select_Button~~Creep~Green_Bar_Off.png~Green_Bar_On.png~Tab_Jog_Probe~424~96~97~29~DarkKhaki~ControlText~32~Microsoft Sans Serif, 12,Bold~True~True~
+Button.Jog_Rate.Big_Step~Label~True~False~False~False~Jog_Select_Button~~Big~Green_Bar_Off.png~Green_Bar_On.png~Tab_Jog_Probe~459~95~97~29~DarkKhaki~ControlText~32~Microsoft Sans Serif, 12,Bold~True~True~
+Button.Jog_Rate.Little_Step~Label~True~False~False~False~Jog_Select_Button~~Little~Green_Bar_Off.png~Green_Bar_On.png~Tab_Jog_Probe~494~96~97~29~DarkKhaki~ControlText~32~Microsoft Sans Serif, 12,Bold~True~True~
+Button.Probe_Loaded~Label~False~False~False~False~Load_Probe~~Load Probe~Green_Bar_On.png~Green_Bar_Off.png~Tab_Offsets~143~950~133~36~Beige~ControlText~32~Microsoft Sans Serif, 12,Bold~True~True~
+Button.Probe.X_Plus~Button~False~False~False~False~Probe_Button~~X~Blue_Arrow_Right.png~Blue_Arrow_Right_Pressed.png~Tab_Jog_Probe~118~1296~100~100~DarkKhaki~DarkOrange~32~Microsoft Sans Serif, 24,Bold~True~True~
+Button.Probe.X_Minus~Button~False~False~False~False~Probe_Button~~X~Blue_Arrow_Left.png~Blue_Arrow_Left_Pressed.png~Tab_Jog_Probe~118~1084~100~100~DarkKhaki~DarkOrange~32~Microsoft Sans Serif, 24,Bold~True~True~
+Button.Probe.Y_Plus~Button~False~False~False~False~Probe_Button~~Y~Blue_Arrow_Up.png~Blue_Arrow_Up_Pressed.png~Tab_Jog_Probe~13~1190~100~100~DarkKhaki~DarkOrange~32~Microsoft Sans Serif, 24,Bold~True~True~
+Button.Probe.Y_Minus~Button~False~False~False~False~Probe_Button~~Y~Blue_Arrow_Down.png~Blue_Arrow_Down_Pressed.png~Tab_Jog_Probe~223~1190~100~100~DarkKhaki~DarkOrange~32~Microsoft Sans Serif, 24,Bold~True~True~
+Button.Probe.Z_Minus~Button~False~False~False~False~Probe_Button~~Z~Red_Arrow_Center.png~Red_Arrow_Center_Pressed.png~Tab_Jog_Probe~117~1190~100~100~DarkKhaki~DarkOrange~32~Microsoft Sans Serif, 24,Bold~True~True~
+Button.Probe.Corner_NW~Button~False~False~False~False~Probe_Button~~~Blue_Arrow_NW.png~Blue_Arrow_NW_Pressed.png~Tab_Jog_Probe~12~1084~100~100~DarkKhaki~ControlText~32~Microsoft Sans Serif, 24,Bold~True~True~
+Button.Probe.Corner_NE~Button~False~False~False~False~Probe_Button~~~Blue_Arrow_NE.png~Blue_Arrow_NE_Pressed.png~Tab_Jog_Probe~13~1296~100~100~DarkKhaki~ControlText~32~Microsoft Sans Serif, 24,Bold~True~True~
+Button.Probe.Corner_SW~Button~False~False~False~False~Probe_Button~~~Blue_Arrow_SW.png~Blue_Arrow_SW_Pressed.png~Tab_Jog_Probe~223~1084~100~100~DarkKhaki~ControlText~32~Microsoft Sans Serif, 24,Bold~True~True~
+Button.Probe.Corner_SE~Button~False~False~False~False~Probe_Button~~~Blue_Arrow_SE.png~Blue_Arrow_SE_Pressed.png~Tab_Jog_Probe~224~1296~100~100~DarkKhaki~OrangeRed~32~Microsoft Sans Serif, 24,Bold~True~True~
+Button.Probe.Center~Button~False~False~False~False~Probe_Button~~Find Center~Green_Bar_On.png~Green_Bar_Off.png~Tab_Jog_Probe~9~727~171~39~DarkKhaki~ControlText~32~Microsoft Sans Serif, 12,Bold~True~True~
+Button.Probe.Center_Move_To_Center~Button~False~False~False~False~Probe_Move_To_Button~~Move to Center~Green_Bar_On.png~Green_Bar_Off.png~Tab_Jog_Probe~206~727~171~39~DarkKhaki~ControlText~32~Microsoft Sans Serif, 12,Bold~True~True~
+Button.Probe.Load~Button~False~False~False~False~Probe_Load_Save~~Load~Green_Bar_On.png~Green_Bar_Off.png~Tab_Jog_Probe~74~12~100~39~DarkKhaki~ControlText~32~Microsoft Sans Serif, 12,Bold~True~True~
+Button.Probe.Save~Button~False~False~False~False~Probe_Load_Save~~Save~Green_Bar_On.png~Green_Bar_Off.png~Tab_Jog_Probe~118~12~100~39~DarkKhaki~ControlText~32~Microsoft Sans Serif, 12,Bold~True~True~
+Button.Tool_Measure.Top~Label~False~False~False~False~Tool_Measure_Button~~Measure Tool~Green_Bar_On.png~Green_Bar_Off.png~Tab_Offsets~396~379~133~36~DarkKhaki~ControlText~32~Microsoft Sans Serif, 12,Bold~True~False~
+Button.Tool_Measure.Bottom~Label~False~False~False~False~Tool_Measure_Button~~Measure Tool~Green_Bar_On.png~Green_Bar_Off.png~Tab_Offsets~436~379~133~36~DarkKhaki~ControlText~32~Microsoft Sans Serif, 12,Bold~False~False~
+Button.Material_Measure~Label~False~False~False~False~Tool_Measure_Button~~Measure Material~Green_Bar_On.png~Green_Bar_Off.png~Tab_Offsets~476~379~133~36~DarkKhaki~ControlText~32~Microsoft Sans Serif, 12,Bold~True~False~
+Button.Move.X_Plus~Button~False~False~False~False~Move_Buttons~~X~Arrow_Right.png~Arrow_Right_Pressed.png~Tab_Jog_Probe~414~1297~100~100~DarkKhaki~ControlText~32~Microsoft Sans Serif, 24,Bold~True~True~
+Button.Move.X_Minus~Button~False~False~False~False~Move_Buttons~~X~Arrow_Left.png~Arrow_Left_Pressed.png~Tab_Jog_Probe~414~1085~100~100~DarkKhaki~ControlText~32~Microsoft Sans Serif, 24,Bold~True~True~
+Button.Move.Y_Plus~Button~False~False~False~False~Move_Buttons~~Y~Arrow_Up.png~Arrow_Up_Pressed.png~Tab_Jog_Probe~361~1190~100~100~DarkKhaki~ControlText~32~Microsoft Sans Serif, 24,Bold~True~True~
+Button.Move.Y_Minus~Button~False~False~False~False~Move_Buttons~~Y~Arrow_Down.png~Arrow_Down_Pressed.png~Tab_Jog_Probe~466~1190~100~100~DarkKhaki~ControlText~32~Microsoft Sans Serif, 24,Bold~True~True~
+Button.Move.Z_Plus~Button~False~False~False~False~Move_Buttons~~Z~Red_Arrow_Up.png~Red_Arrow_Up_Pressed.png~Tab_Jog_Probe~361~979~100~100~DarkKhaki~ControlText~32~Microsoft Sans Serif, 24,Bold~True~True~
+Button.Move.Z_Minus~Button~False~False~False~False~Move_Buttons~~Z~Red_Arrow_Down.png~Red_Arrow_Down_Pressed.png~Tab_Jog_Probe~466~979~100~100~DarkKhaki~ControlText~32~Microsoft Sans Serif, 24,Bold~True~True~
 Button.Homed~Button~False~False~False~False~Home_Axis_Button~~Homed~Green_Bar_On.png~Red_Bar_On.png~Tab_Offsets~4~5~102~31~Beige~ControlText~32~Microsoft Sans Serif, 12,Bold~True~True~
-Button.Home_XYZ~Button~True~False~False~False~Home_Axis_Button~~Homed~Button_Red_Light.png~Button_Red_Dark.png~Tab_Jog_Probe~15~92~100~100~DarkKhaki~ControlText~32~Microsoft Sans Serif, 12,Bold~True~False~
-Button.Home_X~Button~False~False~False~False~Home_Axis_Button~~Homed~Button_Red_Light.png~Button_Red_Dark.png~Tab_Jog_Probe~120~92~100~100~DarkKhaki~ControlText~32~Microsoft Sans Serif, 12,Bold~True~False~
-Button.Home_Y~Button~False~False~False~False~Home_Axis_Button~~Homed~Button_Red_Light.png~Button_Red_Dark.png~Tab_Jog_Probe~226~92~100~100~DarkKhaki~ControlText~32~Microsoft Sans Serif, 12,Bold~True~False~
-Button.Home_Z~Button~True~False~False~False~Home_Axis_Button~~Homed~Button_Red_Light.png~Button_Red_Dark.png~Tab_Jog_Probe~333~92~100~100~DarkKhaki~ControlText~32~Microsoft Sans Serif, 12,Bold~True~False~
-Button.Enable_X~Button~False~False~False~False~Disable_Axis_Button~~Disable~Button_Green_Light.png~Button_Green_Dark.png~Tab_Jog_Probe~120~208~100~100~DarkKhaki~ControlText~32~Microsoft Sans Serif, 12,Bold~True~False~
-Button.Enable_Y~Button~False~False~False~False~Disable_Axis_Button~~Disable~Button_Green_Light.png~Button_Green_Dark.png~Tab_Jog_Probe~226~208~100~100~DarkKhaki~ControlText~32~Microsoft Sans Serif, 12,Bold~True~False~
-Button.Enable_Z~Button~False~False~False~False~Disable_Axis_Button~~Disable~Button_Green_Light.png~Button_Green_Dark.png~Tab_Jog_Probe~333~208~100~100~DarkKhaki~ControlText~32~Microsoft Sans Serif, 12,Bold~True~False~
+Button.Home_XYZ~Button~True~False~False~False~Home_Axis_Button~~Homed~Button_Red_Light.png~Button_Red_Dark.png~Tab_Offsets~15~92~100~100~DarkKhaki~ControlText~32~Microsoft Sans Serif, 12,Bold~True~False~
+Button.Home_X~Button~False~False~False~False~Home_Axis_Button~~Homed~Button_Red_Light.png~Button_Red_Dark.png~Tab_Offsets~120~92~100~100~DarkKhaki~ControlText~32~Microsoft Sans Serif, 12,Bold~True~False~
+Button.Home_Y~Button~False~False~False~False~Home_Axis_Button~~Homed~Button_Red_Light.png~Button_Red_Dark.png~Tab_Offsets~226~92~100~100~DarkKhaki~ControlText~32~Microsoft Sans Serif, 12,Bold~True~False~
+Button.Home_Z~Button~True~False~False~False~Home_Axis_Button~~Homed~Button_Red_Light.png~Button_Red_Dark.png~Tab_Offsets~333~92~100~100~DarkKhaki~ControlText~32~Microsoft Sans Serif, 12,Bold~True~False~
+Button.Enable_X~Button~False~False~False~False~Disable_Axis_Button~~Disable~Button_Green_Light.png~Button_Green_Dark.png~Tab_Offsets~120~208~100~100~DarkKhaki~ControlText~32~Microsoft Sans Serif, 12,Bold~True~False~
+Button.Enable_Y~Button~False~False~False~False~Disable_Axis_Button~~Disable~Button_Green_Light.png~Button_Green_Dark.png~Tab_Offsets~226~208~100~100~DarkKhaki~ControlText~32~Microsoft Sans Serif, 12,Bold~True~False~
+Button.Enable_Z~Button~False~False~False~False~Disable_Axis_Button~~Disable~Button_Green_Light.png~Button_Green_Dark.png~Tab_Offsets~333~208~100~100~DarkKhaki~ControlText~32~Microsoft Sans Serif, 12,Bold~True~False~
 Button.Goto.Home~Button~False~False~False~False~Goto_Position_Button~~Home~Green_Bar_On.png~Green_Bar_Off.png~Tab_Offsets~148~117~71~36~Beige~ControlText~32~Microsoft Sans Serif, 12,Bold~True~True~
-Button.Goto.Park~Button~False~False~False~False~Goto_Position_Button~~Park~Green_Bar_On.png~Green_Bar_Off.png~Tab_Offsets~148~192~93~36~Beige~ControlText~32~Microsoft Sans Serif, 12,Bold~True~True~
 Button.Goto.Tool_Change~Button~False~False~False~False~Goto_Position_Button~~Tool Change~Green_Bar_On.png~Green_Bar_Off.png~Tab_Offsets~148~292~125~36~Beige~ControlText~32~Microsoft Sans Serif, 12,Bold~True~True~
-Button.Goto.Big_Brush~Button~False~False~False~False~Goto_Position_Button~~Seat Big Brush~Green_Bar_On.png~Green_Bar_Off.png~Tab_Offsets~148~424~148~36~Beige~ControlText~32~Microsoft Sans Serif, 12,Bold~True~True~
-Button.Goto.Small_Brush~Button~False~False~False~False~Goto_Position_Button~~Seat Small Brush~Green_Bar_On.png~Green_Bar_Off.png~Tab_Offsets~149~578~170~34~Beige~ControlText~32~Microsoft Sans Serif, 12,Bold~True~True~
-Button.Fixture_Offset.Move_To.Origin~Button~False~False~False~False~Fixture_Offset_Buttons~~XY~Arrow_Green_NE.png~Arrow_Green_NE.png~Tab_Offsets~216~136~100~100~DarkKhaki~ControlText~32~Microsoft Sans Serif, 24,Bold~True~False~
-Button.Fixture_Offset.Move_To.Square_Check~Button~False~False~False~False~Fixture_Offset_Buttons~~X~Arrow_Right.png~Arrow_Right_Pressed.png~Tab_Offsets~215~514~100~100~DarkKhaki~ControlText~32~Microsoft Sans Serif, 24,Bold~True~False~
-Button.Fixture_Offset.Probe_Square~Button~False~False~False~False~Fixture_Offset_Buttons~~Y~Blue_Arrow_Down.png~Blue_Arrow_Down_Pressed.png~Tab_Offsets~70~620~100~100~DarkKhaki~DarkOrange~32~Microsoft Sans Serif, 24,Bold~True~False~
-Button.Fixture_Offset.Probe_Origin~Button~False~False~False~False~Fixture_Offset_Buttons~~XY~Blue_Arrow_SW.png~Blue_Arrow_SW_Pressed.png~Tab_Offsets~65~373~100~100~DarkKhaki~DarkOrange~32~Microsoft Sans Serif, 24,Bold~True~False~
-Button.Fixture_Offset.Move_To_Offset~Button~False~False~False~False~Fixture_Offset_Buttons~~Go to Offset~Green_Bar_On.png~Green_Bar_Off.png~Tab_Offsets~265~246~104~53~DarkKhaki~ControlText~32~Microsoft Sans Serif, 12,Bold~True~False~
-Button.Fixture_Offset.Load~Button~False~False~False~False~Fixture_Offset_Buttons~~Load~Green_Bar_On.png~Green_Bar_Off.png~Tab_Offsets~98~138~100~33~DarkKhaki~ControlText~32~Microsoft Sans Serif, 12,Bold~True~False~Loads all boxes on this tab
-Button.Fixture_Offset.Save~Button~False~False~False~False~Fixture_Offset_Buttons~~Save~Green_Bar_On.png~Green_Bar_Off.png~Tab_Offsets~136~138~100~33~DarkKhaki~ControlText~32~Microsoft Sans Serif, 12,Bold~True~False~Saves all boxes on this tab
-Button.Fixture_Offset.Reset_X~Button~False~False~False~False~Fixture_Offset_Buttons~~Reset~Green_Bar_On.png~Green_Bar_Off.png~Tab_Offsets~404~836~90~27~DarkKhaki~ControlText~32~Microsoft Sans Serif, 12,Bold~True~False~
-Button.Fixture_Offset.Reset_Y~Button~False~False~False~False~Fixture_Offset_Buttons~~Reset~Green_Bar_On.png~Green_Bar_Off.png~Tab_Offsets~450~836~90~27~DarkKhaki~ControlText~32~Microsoft Sans Serif, 12,Bold~True~False~
-Button.Fixture_Offset.Reset_Z~Button~False~False~False~False~Fixture_Offset_Buttons~~Reset~Green_Bar_On.png~Green_Bar_Off.png~Tab_Offsets~496~836~97~27~DarkKhaki~ControlText~32~Microsoft Sans Serif, 12,Bold~True~False~
-Button.Fixture_Offset.Adjust.Plus_X~Button~False~False~False~False~Fixture_Offset_Buttons~~X~Arrow_Right.png~Arrow_Right_Pressed.png~Tab_Offsets~426~1110~75~75~DarkKhaki~ControlText~32~Microsoft Sans Serif, 15.75,Bold~True~False~Adds value adjustment to X Delta
-Button.Fixture_Offset.Adjust.Plus_Y~Button~False~False~False~False~Fixture_Offset_Buttons~~Y~Arrow_Up.png~Arrow_Up_Pressed.png~Tab_Offsets~351~1035~75~75~DarkKhaki~ControlText~32~Microsoft Sans Serif, 15.75,Bold~True~False~Adds value adjustment to Y Delta
-Button.Fixture_Offset.Adjust.Plus_Z~Button~False~False~False~False~Fixture_Offset_Buttons~~Z~Red_Arrow_Up.png~Red_Arrow_Up_Pressed.png~Tab_Offsets~386~1200~75~75~DarkKhaki~ControlText~32~Microsoft Sans Serif, 15.75,Bold~True~False~Adds value adjustment to Z Delta
-Button.Fixture_Offset.Adjust.Minus_X~Button~False~False~False~False~Fixture_Offset_Buttons~~X~Arrow_Left.png~Arrow_Left_Pressed.png~Tab_Offsets~425~960~75~75~DarkKhaki~ControlText~32~Microsoft Sans Serif, 15.75,Bold~True~False~Subtracts value adjustment to X Delta
-Button.Fixture_Offset.Adjust.Minus_Y~Button~False~False~False~False~Fixture_Offset_Buttons~~Y~Arrow_Down.png~Arrow_Down_Pressed.png~Tab_Offsets~500~1035~75~75~DarkKhaki~ControlText~32~Microsoft Sans Serif, 15.75,Bold~True~False~Subtracts value adjustment to Y Delta
-Button.Fixture_Offset.Adjust.Minus_Z~Button~False~False~False~False~Fixture_Offset_Buttons~~Z~Red_Arrow_Down.png~Red_Arrow_Down_Pressed.png~Tab_Offsets~464~1200~75~75~DarkKhaki~ControlText~32~Microsoft Sans Serif, 15.75,Bold~True~False~Subtracts value adjustment to Z Delt
-Text_Box.Abs_Pos.X~Text_Box~5.129~False~False~True~~~5.129~~~Tab_Offsets~38~117~97~28~White~Black~1~Microsoft Sans Serif, 15.75,Bold~True~True~
-Text_Box.Abs_Pos.Y~Text_Box~6.457~False~False~True~~~6.457~~~Tab_Offsets~73~117~97~28~White~Black~1~Microsoft Sans Serif, 15.75,Bold~True~True~
-Text_Box.Abs_Pos.Z~Text_Box~6.000~False~False~True~~~6.000~~~Tab_Offsets~108~117~97~28~White~Black~1~Microsoft Sans Serif, 15.75,Bold~True~True~
-Text_Box.Work_Pos.X~Text_Box~3.007~False~False~True~~~3.007~~~Tab_Offsets~38~220~92~28~White~Black~1~Microsoft Sans Serif, 15.75,Bold~True~True~
-Text_Box.Work_Pos.Y~Text_Box~3.241~False~False~True~~~3.241~~~Tab_Offsets~73~220~92~28~White~Black~1~Microsoft Sans Serif, 15.75,Bold~True~True~
-Text_Box.Work_Pos.Z~Text_Box~6.042~False~False~True~~~6.042~~~Tab_Offsets~108~220~92~28~White~Black~1~Microsoft Sans Serif, 15.75,Bold~True~True~
-Text_Box.Offset.X~Text_Box~2.122~False~False~True~~~2.122~~~Tab_Offsets~38~318~97~28~Azure~Black~1~Microsoft Sans Serif, 15.75,Bold~True~True~
-Text_Box.Offset.Y~Text_Box~3.216~False~False~True~~~3.216~~~Tab_Offsets~73~318~97~28~Azure~Black~1~Microsoft Sans Serif, 15.75,Bold~True~True~
-Text_Box.Offset.Z~Text_Box~-0.042~False~False~True~~~-0.042~~~Tab_Offsets~108~318~97~28~Azure~Black~1~Microsoft Sans Serif, 15.75,Bold~True~True~
-Text_Box.Coordinate_System~Text_Box~G54~False~True~False~~~G54~~~Tab_Offsets~3~318~97~28~Azure~Black~0~Microsoft Sans Serif, 15.75,Bold~True~True~
-Text_Box.Jog_Rate.Selected~Text_Box~Fast~False~False~True~~~Fast~~~Tab_Offsets~108~549~83~28~White~Black~2~Microsoft Sans Serif, 15.75,Bold~True~True~
-Text_Box.Jog_Rate.Fast~Text_Box~50~False~False~False~Jog_Rate_Set~~50~~~Tab_Jog_Probe~354~26~64~31~Azure~Black~1~Microsoft Sans Serif, 12,Bold~True~False~
-Text_Box.Jog_Rate.Slow~Text_Box~5~False~False~False~Jog_Rate_Set~~5~~~Tab_Jog_Probe~389~25~64~31~Azure~Black~1~Microsoft Sans Serif, 12,Bold~True~False~
-Text_Box.Jog_Rate.Creep~Text_Box~1~False~False~False~Jog_Rate_Set~~1~~~Tab_Jog_Probe~424~26~64~31~Azure~Black~1~Microsoft Sans Serif, 12,Bold~True~False~
-Text_Box.Jog_Rate.Big_Step~Text_Box~0.005~False~False~False~Jog_Rate_Set~~0.005~~~Tab_Jog_Probe~459~26~64~31~Azure~Black~1~Microsoft Sans Serif, 12,Bold~True~False~
-Text_Box.Jog_Rate.Little_Step~Text_Box~0.001~False~False~False~Jog_Rate_Set~~0.001~~~Tab_Jog_Probe~494~26~64~31~Azure~Black~1~Microsoft Sans Serif, 12,Bold~True~False~
-Text_Box.Jog.Safe_Z~Text_Box~3.223~False~False~False~Move_Text_Box_Click~~3.223~~~Tab_Jog_Probe~439~648~87~31~Azure~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
-Text_Box.Velocity~Text_Box~0~False~False~True~~~0~~~Tab_Offsets~73~549~83~28~White~Black~1~Microsoft Sans Serif, 15.75,Bold~True~True~
-Text_Box.Feedrate~Text_Box~0.000~False~False~True~~~0.000~~~Tab_Offsets~38~549~83~28~White~Black~1~Microsoft Sans Serif, 15.75,Bold~True~True~
-Text_Box.Probe.State~Text_Box~Idle~False~False~True~~~Idle~~~Tab_Jog_Probe~20~96~328~31~White~Black~0~Microsoft Sans Serif, 15.75,Bold~True~False~
-Text_Box.Probe.Diameter~Text_Box~0.100~False~False~False~Probe_Text_Box_Click~~0.100~~~Tab_Jog_Probe~93~328~92~31~Azure~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
-Text_Box.Probe.Distance~Text_Box~0.250~False~False~False~Probe_Text_Box_Click~~0.250~~~Tab_Jog_Probe~93~25~92~31~Azure~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
-Text_Box.Probe.Feedrate~Text_Box~5.0~False~False~False~Probe_Text_Box_Click~~5.0~~~Tab_Jog_Probe~93~176~92~31~Azure~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
-Text_Box.Probe.Start.X~Text_Box~2.225~False~False~True~~~2.225~~~Tab_Jog_Probe~176~49~83~31~White~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
-Text_Box.Probe.End.X~Text_Box~2.172~False~False~True~~~2.172~~~Tab_Jog_Probe~176~138~83~31~White~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
-Text_Box.Probe.Surface.X~Text_Box~2.122~False~False~True~~~2.122~~~Tab_Jog_Probe~176~316~83~31~White~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
-Text_Box.Probe.Gap.X~Text_Box~0.053~False~False~True~~~0.053~~~Tab_Jog_Probe~176~227~83~31~White~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
-Text_Box.Probe.Start.Y~Text_Box~3.326~False~False~True~~~3.326~~~Tab_Jog_Probe~219~49~83~31~White~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
-Text_Box.Probe.End.Y~Text_Box~3.278~False~False~True~~~3.278~~~Tab_Jog_Probe~219~138~83~31~White~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
-Text_Box.Probe.Surface.Y~Text_Box~3.228~False~False~True~~~3.228~~~Tab_Jog_Probe~219~316~83~31~White~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
-Text_Box.Probe.Gap.Y~Text_Box~0.048~False~False~True~~~0.048~~~Tab_Jog_Probe~219~227~83~31~White~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
-Text_Box.Probe.Start.Z~Text_Box~5.08~False~False~True~~~5.08~~~Tab_Jog_Probe~262~49~83~31~White~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
-Text_Box.Probe.End.Z~Text_Box~4.959~False~False~True~~~4.959~~~Tab_Jog_Probe~262~138~83~31~White~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
-Text_Box.Probe.Surface.Z~Text_Box~4.909~False~False~True~~~4.909~~~Tab_Jog_Probe~262~316~83~31~White~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
-Text_Box.Probe.Gap.Z~Text_Box~0.121~False~False~True~~~0.121~~~Tab_Jog_Probe~262~227~83~31~White~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
-Text_Box.Probe.Center.Gap.X_Plus~Text_Box~0.055~False~False~True~~~0.055~~~Tab_Jog_Probe~100~756~87~31~White~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
-Text_Box.Probe.Center.Gap.X_Minus~Text_Box~0.055~False~False~True~~~0.055~~~Tab_Jog_Probe~100~512~87~31~White~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
-Text_Box.Probe.Center.Gap.Y_Plus~Text_Box~0.057~False~False~True~~~0.057~~~Tab_Jog_Probe~63~636~87~31~White~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
-Text_Box.Probe.Center.Gap.Y_Minus~Text_Box~0.052~False~False~True~~~0.052~~~Tab_Jog_Probe~137~636~87~31~White~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
-Text_Box.Probe.Center.XY~Text_Box~4.000, 4.003~False~False~True~ 3.960~~4.000, 4.003~~~Tab_Jog_Probe~100~602~151~31~White~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
-Text_Box.Probe.Center.Delta.X~Text_Box~0.000~False~False~True~~~0.000~~~Tab_Jog_Probe~100~847~87~31~White~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
-Text_Box.Probe.Center.Delta.Y~Text_Box~0.005~False~False~True~~~0.005~~~Tab_Jog_Probe~174~636~87~31~White~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
-Text_Box.Probe.Safe_Z~Text_Box~4.797~False~False~False~Move_Text_Box_Click~~4.797~~~Tab_Jog_Probe~153~1313~87~31~Azure~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
-Text_Box.Move.X_Plus~Text_Box~24.000~False~False~False~Move_Text_Box_Click~~24.000~~~Tab_Jog_Probe~380~1190~100~31~Azure~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
-Text_Box.Move.X_Minus~Text_Box~2.218~False~False~False~Move_Text_Box_Click~~2.218~~~Tab_Jog_Probe~381~978~100~31~Azure~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
-Text_Box.Move.Y_Plus~Text_Box~4.000~False~False~False~Move_Text_Box_Click~~4.000~~~Tab_Jog_Probe~328~1083~100~31~Azure~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
-Text_Box.Move.Y_Minus~Text_Box~3.329~False~False~False~Move_Text_Box_Click~~3.329~~~Tab_Jog_Probe~569~1083~100~31~Azure~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
-Text_Box.Move.Z_Up~Text_Box~6~False~False~False~Move_Text_Box_Click~~6~~~Tab_Jog_Probe~361~783~83~31~Azure~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
-Text_Box.Move.Z_Down~Text_Box~4.631~False~False~False~Move_Text_Box_Click~~4.631~~~Tab_Jog_Probe~535~783~83~31~Azure~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
-Text_Box.GoTo.Home.X~Text_Box~0~False~False~False~Goto_Position_Text_Box_Click~~0~~~Tab_Jog_Probe~152~600~83~28~Azure~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
-Text_Box.GoTo.Home.Y~Text_Box~0~False~False~False~Goto_Position_Text_Box_Click~~0~~~Tab_Jog_Probe~152~693~83~28~Azure~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
-Text_Box.GoTo.Home.Z~Text_Box~6~False~False~False~Goto_Position_Text_Box_Click~~6~~~Tab_Jog_Probe~152~786~83~28~Azure~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
-Text_Box.GoTo.Park.X~Text_Box~0~False~False~False~Goto_Position_Text_Box_Click~~0~~~Tab_Jog_Probe~194~600~83~28~Azure~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
-Text_Box.GoTo.Park.Y~Text_Box~12~False~False~False~Goto_Position_Text_Box_Click~~12~~~Tab_Jog_Probe~194~693~83~28~Azure~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
-Text_Box.GoTo.Park.Z~Text_Box~6~False~False~False~Goto_Position_Text_Box_Click~~6~~~Tab_Jog_Probe~194~786~83~28~Azure~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
-Text_Box.GoTo.Tool_Change.X~Text_Box~12~False~False~False~Goto_Position_Text_Box_Click~~12~~~Tab_Jog_Probe~236~600~83~28~Azure~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
-Text_Box.GoTo.Tool_Change.Y~Text_Box~0~False~False~False~Goto_Position_Text_Box_Click~~0~~~Tab_Jog_Probe~236~693~83~28~Azure~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
-Text_Box.GoTo.Tool_Change.Z~Text_Box~6~False~False~False~Goto_Position_Text_Box_Click~~6~~~Tab_Jog_Probe~236~786~83~28~Azure~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
-Text_Box.GoTo.Big_Brush.X~Text_Box~12~False~False~False~Goto_Position_Text_Box_Click~~12~~~Tab_Jog_Probe~278~600~83~28~Azure~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
-Text_Box.GoTo.Big_Brush.Y~Text_Box~0~False~False~False~Goto_Position_Text_Box_Click~~0~~~Tab_Jog_Probe~278~693~83~28~Azure~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
-Text_Box.GoTo.Big_Brush.Z~Text_Box~2.944~False~False~False~Goto_Position_Text_Box_Click~~2.944~~~Tab_Jog_Probe~278~786~83~28~Azure~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
-Text_Box.GoTo.Small_Brush.X~Text_Box~12~False~False~False~Goto_Position_Text_Box_Click~~12~~~Tab_Jog_Probe~320~600~83~28~Azure~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
-Text_Box.GoTo.Small_Brush.Y~Text_Box~0~False~False~False~Goto_Position_Text_Box_Click~~0~~~Tab_Jog_Probe~320~693~83~28~Azure~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
-Text_Box.GoTo.Small_Brush.Z~Text_Box~4~False~False~False~Goto_Position_Text_Box_Click~~4~~~Tab_Jog_Probe~320~786~83~28~Azure~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
-Text_Box.Offset.X~Text_Box~2.122~False~False~False~Fixture_Offset_Text_Boxes~~2.122~~~Tab_Offsets~38~318~97~28~Azure~Black~1~Microsoft Sans Serif, 15.75,Bold~True~True~
-Text_Box.Offset.Y~Text_Box~3.216~False~False~False~Fixture_Offset_Text_Boxes~~3.216~~~Tab_Offsets~73~318~97~28~Azure~Black~1~Microsoft Sans Serif, 15.75,Bold~True~True~
-Text_Box.Offset.Z~Text_Box~-0.042~False~False~False~Fixture_Offset_Text_Boxes~~-0.042~~~Tab_Offsets~108~318~97~28~Azure~Black~1~Microsoft Sans Serif, 15.75,Bold~True~True~
-Text_Box.Fixture_Offset.X~Text_Box~2.122~False~False~False~Fixture_Offset_Text_Boxes~~2.122~~~Tab_Offsets~215~244~100~31~Azure~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
-Text_Box.Fixture_Offset.Y~Text_Box~3.216~False~False~False~Fixture_Offset_Text_Boxes~~3.216~~~Tab_Offsets~177~138~100~31~Azure~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
-Text_Box.Fixture_Offset.Z~Text_Box~-0.042~False~False~False~Fixture_Offset_Text_Boxes~~-0.042~~~Tab_Offsets~56~136~100~31~Azure~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
-Text_Box.Fixture_Offset.Original.X~Text_Box~2.122~False~False~True~~~2.122~~~Tab_Offsets~402~506~104~31~White~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
-Text_Box.Fixture_Offset.Original.Y~Text_Box~3.216~False~False~True~~~3.216~~~Tab_Offsets~448~506~104~31~White~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
-Text_Box.Fixture_Offset.Original.Z~Text_Box~-0.062~False~False~True~~~-0.062~~~Tab_Offsets~494~506~104~31~White~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
-Text_Box.Fixture_Offset.Delta.X~Text_Box~0.000~False~False~True~Fixture_Offset_Text_Boxes~~0.000~~~Tab_Offsets~402~616~104~31~White~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
-Text_Box.Fixture_Offset.Delta.Y~Text_Box~0.000~False~False~True~~~0.000~~~Tab_Offsets~448~616~104~31~White~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
-Text_Box.Fixture_Offset.Delta.Z~Text_Box~0.020~False~False~True~~~0.020~~~Tab_Offsets~494~616~104~31~White~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
-Text_Box.Fixture_Offset.Total.X~Text_Box~2.122~False~False~True~Fixture_Offset_Text_Boxes~~2.122~~~Tab_Offsets~402~726~104~31~White~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
-Text_Box.Fixture_Offset.Total.Y~Text_Box~3.216~False~False~True~Fixture_Offset_Text_Boxes~~3.216~~~Tab_Offsets~448~726~104~31~White~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
-Text_Box.Fixture_Offset.Total.Z~Text_Box~-0.042~False~False~True~Fixture_Offset_Text_Boxes~~-0.042~~~Tab_Offsets~494~726~104~31~White~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
-Text_Box.Fixture_Offset.Increment~Text_Box~0.010~False~False~False~Fixture_Offset_Text_Boxes~~0.010~~~Tab_Offsets~446~1039~66~31~Azure~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
-Text_Box.Fixture_Offset.Origin_Probe.X~Text_Box~2.225~False~False~False~Fixture_Offset_Text_Boxes~~2.225~~~Tab_Offsets~172~291~100~31~Azure~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
-Text_Box.Fixture_Offset.Origin_Probe.Y~Text_Box~3.326~False~False~False~Fixture_Offset_Text_Boxes~~3.326~~~Tab_Offsets~138~262~100~31~Azure~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
-Text_Box.Fixture_Offset.Origin_Probe.Z~Text_Box~4.353~False~False~False~Fixture_Offset_Text_Boxes~~4.353~~~Tab_Offsets~56~262~100~31~Azure~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
-Text_Box.Fixture_Offset.Square_X~Text_Box~2.000~False~False~False~Fixture_Offset_Text_Boxes~~2.000~~~Tab_Offsets~215~620~100~31~Azure~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
-Text_Box.Fixture_Offset.Square_Error~Text_Box~2.000~False~False~True~~~2.000~~~Tab_Offsets~111~826~100~31~White~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
-Text_Box.Tool_Setter_Height~Text_Box~2.000~False~False~False~Fixture_Offset_Text_Boxes~~2.000~~~Tab_Offsets~369~240~104~31~Azure~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
-Text_Box.Tool_Measure.X~Text_Box~0.378~False~False~False~Fixture_Offset_Text_Boxes~~0.378~~~Tab_Offsets~405~240~104~31~Azure~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
-Text_Box.Tool_Measure.Y~Text_Box~0.190~False~False~False~Fixture_Offset_Text_Boxes~~0.190~~~Tab_Offsets~441~240~104~31~Azure~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
-Text_Box.Tool_Measure.Z~Text_Box~5.080~False~False~False~Fixture_Offset_Text_Boxes~~5.080~~~Tab_Offsets~477~240~104~31~Azure~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
+Button.Goto.Tool_Seat~Button~False~False~False~False~Goto_Position_Button~~Tool Seat~Green_Bar_On.png~Green_Bar_Off.png~Tab_Offsets~148~424~119~36~Beige~ControlText~32~Microsoft Sans Serif, 12,Bold~True~True~
+Button.Goto.Tool_Measure~Button~False~False~False~False~Goto_Position_Button~~Tool Measure~Green_Bar_On.png~Green_Bar_Off.png~Tab_Offsets~148~550~148~36~Beige~ControlText~32~Microsoft Sans Serif, 12,Bold~True~True~
+Button.Goto.Park~Button~False~False~False~False~Goto_Position_Button~~Park~Green_Bar_On.png~Green_Bar_Off.png~Tab_Offsets~148~192~93~36~Beige~ControlText~32~Microsoft Sans Serif, 12,Bold~True~True~
+Button.Square.Goto.X_Plus~Button~False~False~False~False~Square_Buttons~~X~Arrow_Right.png~Arrow_Right_Pressed.png~Tab_Offsets~233~1138~100~100~DarkKhaki~ControlText~32~Microsoft Sans Serif, 24,Bold~True~False~
+Button.Square.Goto.X_Minus~Button~False~False~False~False~Square_Buttons~~X~Arrow_Left.png~Arrow_Left_Pressed.png~Tab_Offsets~233~707~100~100~DarkKhaki~ControlText~32~Microsoft Sans Serif, 24,Bold~True~False~
+Button.Square.Goto.Y_Plus~Button~False~False~False~False~Square_Buttons~~Y~Arrow_Up.png~Arrow_Up_Pressed.png~Tab_Offsets~71~401~100~100~DarkKhaki~ControlText~32~Microsoft Sans Serif, 24,Bold~True~False~
+Button.Square.Goto.Y_Minus~Button~False~False~False~False~Square_Buttons~~Y~Arrow_Down.png~Arrow_Down_Pressed.png~Tab_Offsets~394~401~100~100~DarkKhaki~ControlText~32~Microsoft Sans Serif, 24,Bold~True~False~
+Button.Square.Goto.Z~Button~False~False~False~False~Square_Buttons~~Y~Red_Arrow_Down.png~Red_Arrow_Down_Pressed.png~Tab_Offsets~339~926~100~100~DarkKhaki~ControlText~32~Microsoft Sans Serif, 24,Bold~True~False~
+Button.Square.Probe.X_Plus~Button~False~False~False~False~Square_Buttons~~X~Blue_Arrow_Left.png~Blue_Arrow_Left_Pressed.png~Tab_Offsets~173~401~100~100~DarkKhaki~DarkOrange~32~Microsoft Sans Serif, 24,Bold~True~False~
+Button.Square.Probe.X_Minus~Button~False~False~False~False~Square_Buttons~~X~Blue_Arrow_Left.png~Blue_Arrow_Left_Pressed.png~Tab_Offsets~288~401~100~100~DarkKhaki~DarkOrange~32~Microsoft Sans Serif, 24,Bold~True~False~
+Button.Square.Probe.Y_Plus~Button~False~False~False~False~Square_Buttons~~Y~Blue_Arrow_Down.png~Blue_Arrow_Down_Pressed.png~Tab_Offsets~233~1032~100~100~DarkKhaki~DarkOrange~32~Microsoft Sans Serif, 24,Bold~True~False~
+Button.Square.Probe.Y_Minus~Button~False~False~False~False~Square_Buttons~~Y~Blue_Arrow_Down.png~Blue_Arrow_Down_Pressed.png~Tab_Offsets~233~820~100~100~DarkKhaki~DarkOrange~32~Microsoft Sans Serif, 24,Bold~True~False~
+Button.Fixture_Offset.Set~Button~False~False~False~False~Fixture_Offset_Buttons~~Set~Green_Bar_On.png~Green_Bar_Off.png~Tab_Offsets~180~23~100~39~DarkKhaki~ControlText~32~Microsoft Sans Serif, 12,Bold~True~False~
+Button.Fixture_Offset.Load~Button~False~False~False~False~Fixture_Offset_Buttons~~Load~Green_Bar_On.png~Green_Bar_Off.png~Tab_Offsets~17~23~100~39~DarkKhaki~ControlText~32~Microsoft Sans Serif, 12,Bold~True~False~
+Button.Fixture_Offset.Save~Button~False~False~False~False~Fixture_Offset_Buttons~~Save~Green_Bar_On.png~Green_Bar_Off.png~Tab_Offsets~60~23~100~39~DarkKhaki~ControlText~32~Microsoft Sans Serif, 12,Bold~True~False~
+Button.Fixture_Offset.Goto~Button~False~False~False~False~Fixture_Offset_Buttons~~Goto~Green_Bar_On.png~Green_Bar_Off.png~Tab_Offsets~239~23~100~39~DarkKhaki~ControlText~32~Microsoft Sans Serif, 12,Bold~True~False~
+Button.Fixture_Offset.Adjust.Plus_X~Button~False~False~False~False~Fixture_Offset_Buttons~~X~Arrow_Right.png~Arrow_Right_Pressed.png~Tab_Offsets~192~800~75~75~DarkKhaki~ControlText~32~Microsoft Sans Serif, 15.75,Bold~True~False~Adds value adjustment to X Delta
+Button.Fixture_Offset.Adjust.Plus_Y~Button~False~False~False~False~Fixture_Offset_Buttons~~Y~Arrow_Up.png~Arrow_Up_Pressed.png~Tab_Offsets~117~725~75~75~DarkKhaki~ControlText~32~Microsoft Sans Serif, 15.75,Bold~True~False~Adds value adjustment to Y Delta
+Button.Fixture_Offset.Adjust.Plus_Z~Button~False~False~False~False~Fixture_Offset_Buttons~~Z~Red_Arrow_Up.png~Red_Arrow_Up_Pressed.png~Tab_Offsets~152~890~75~75~DarkKhaki~ControlText~32~Microsoft Sans Serif, 15.75,Bold~True~False~Adds value adjustment to Z Delta
+Button.Fixture_Offset.Adjust.Minus_X~Button~False~False~False~False~Fixture_Offset_Buttons~~X~Arrow_Left.png~Arrow_Left_Pressed.png~Tab_Offsets~191~650~75~75~DarkKhaki~ControlText~32~Microsoft Sans Serif, 15.75,Bold~True~False~Subtracts value adjustment to X Delta
+Button.Fixture_Offset.Adjust.Minus_Y~Button~False~False~False~False~Fixture_Offset_Buttons~~Y~Arrow_Down.png~Arrow_Down_Pressed.png~Tab_Offsets~266~725~75~75~DarkKhaki~ControlText~32~Microsoft Sans Serif, 15.75,Bold~True~False~Subtracts value adjustment to Y Delta
+Button.Fixture_Offset.Adjust.Minus_Z~Button~False~False~False~False~Fixture_Offset_Buttons~~Z~Red_Arrow_Down.png~Red_Arrow_Down_Pressed.png~Tab_Offsets~230~890~75~75~DarkKhaki~ControlText~32~Microsoft Sans Serif, 15.75,Bold~True~False~Subtracts value adjustment to Z Delt
+Button.Fixture_Offset.Reset_X~Button~False~False~False~False~Fixture_Offset_Buttons~~Reset~Green_Bar_On.png~Green_Bar_Off.png~Tab_Offsets~168~518~90~27~DarkKhaki~ControlText~32~Microsoft Sans Serif, 12,Bold~True~False~
+Button.Fixture_Offset.Reset_Y~Button~False~False~False~False~Fixture_Offset_Buttons~~Reset~Green_Bar_On.png~Green_Bar_Off.png~Tab_Offsets~214~518~90~27~DarkKhaki~ControlText~32~Microsoft Sans Serif, 12,Bold~True~False~
+Button.Fixture_Offset.Reset_Z~Button~False~False~False~False~Fixture_Offset_Buttons~~Reset~Green_Bar_On.png~Green_Bar_Off.png~Tab_Offsets~260~518~97~27~DarkKhaki~ControlText~32~Microsoft Sans Serif, 12,Bold~True~False~
+Button.Fixture_Offset.Z0_Top~Label~True~False~False~False~Fixture_Offset_Buttons~~Z0 on Top~Green_Bar_On.png~Green_Bar_Off.png~Tab_Offsets~16~994~176~39~DarkKhaki~ControlText~32~Microsoft Sans Serif, 12,Bold~True~False~
+Button.Fixture_Offset.Z0_Bottom~Label~False~False~False~False~Fixture_Offset_Buttons~~Z0 on Bottom~Green_Bar_On.png~Green_Bar_Off.png~Tab_Offsets~58~994~176~39~DarkKhaki~ControlText~32~Microsoft Sans Serif, 12,Bold~True~False~
+Text_Box.Abs_Pos.X~Text_Box~2.297~False~True~True~~~2.297~~~Tab_Offsets~38~117~97~28~White~Black~1~Microsoft Sans Serif, 15.75,Bold~True~True~
+Text_Box.Abs_Pos.Y~Text_Box~4.663~False~True~True~~~4.663~~~Tab_Offsets~73~117~97~28~White~Black~1~Microsoft Sans Serif, 15.75,Bold~True~True~
+Text_Box.Abs_Pos.Z~Text_Box~5.364~False~True~True~~~5.364~~~Tab_Offsets~108~117~97~28~White~Black~1~Microsoft Sans Serif, 15.75,Bold~True~True~
+Text_Box.Work_Pos.X~Text_Box~0.000~False~True~True~~~0.000~~~Tab_Offsets~38~220~92~28~White~Black~1~Microsoft Sans Serif, 15.75,Bold~True~True~
+Text_Box.Work_Pos.Y~Text_Box~1.171~False~True~True~~~1.171~~~Tab_Offsets~73~220~92~28~White~Black~1~Microsoft Sans Serif, 15.75,Bold~True~True~
+Text_Box.Work_Pos.Z~Text_Box~1.810~False~True~True~~~1.810~~~Tab_Offsets~108~220~92~28~White~Black~1~Microsoft Sans Serif, 15.75,Bold~True~True~
+Text_Box.Offset.X~Text_Box~2.297~False~False~True~~~2.297~~~Tab_Offsets~38~318~97~28~Gainsboro~Black~1~Microsoft Sans Serif, 15.75,Bold~True~True~
+Text_Box.Offset.Y~Text_Box~3.492~False~False~True~~~3.492~~~Tab_Offsets~73~318~97~28~Gainsboro~Black~1~Microsoft Sans Serif, 15.75,Bold~True~True~
+Text_Box.Offset.Z~Text_Box~3.554~False~False~True~~~3.554~~~Tab_Offsets~108~318~97~28~Red~Black~1~Microsoft Sans Serif, 15.75,Bold~True~True~
+Text_Box.Coordinate_System~Text_Box~G54~False~False~False~~~G54~~~Tab_Offsets~3~318~97~28~Gainsboro~Black~0~Microsoft Sans Serif, 15.75,Bold~True~True~
+Text_Box.Jog_Rate.Selected~Text_Box~Fast~False~True~True~~~Fast~~~Tab_Offsets~108~549~83~28~Red~Black~2~Microsoft Sans Serif, 15.75,Bold~True~True~
+Text_Box.Jog_Rate.Fast~Text_Box~50~False~False~False~Jog_Rate_Set~~50~~~Tab_Jog_Probe~354~26~64~31~Azure~Black~1~Microsoft Sans Serif, 14.25,Bold~True~True~
+Text_Box.Jog_Rate.Slow~Text_Box~5~False~False~False~Jog_Rate_Set~~5~~~Tab_Jog_Probe~389~25~64~31~Azure~Black~1~Microsoft Sans Serif, 14.25,Bold~True~True~
+Text_Box.Jog_Rate.Creep~Text_Box~1~False~False~False~Jog_Rate_Set~~1~~~Tab_Jog_Probe~424~26~64~31~Azure~Black~1~Microsoft Sans Serif, 14.25,Bold~True~True~
+Text_Box.Jog_Rate.Big_Step~Text_Box~0.005~False~False~False~Jog_Rate_Set~~0.005~~~Tab_Jog_Probe~459~26~64~31~Azure~Black~1~Microsoft Sans Serif, 14.25,Bold~True~True~
+Text_Box.Jog_Rate.Little_Step~Text_Box~0.001~False~False~False~Jog_Rate_Set~~0.001~~~Tab_Jog_Probe~494~26~64~31~Azure~Black~1~Microsoft Sans Serif, 14.25,Bold~True~True~
+Text_Box.Jog.Safe_Z~Text_Box~3.000~False~False~False~Move_Text_Box_Click~~3.000~~~Tab_Jog_Probe~439~648~87~31~Azure~Black~1~Microsoft Sans Serif, 15.75,Bold~True~True~
+Text_Box.Velocity~Text_Box~0.01~False~True~True~~~0.01~~~Tab_Offsets~73~549~83~28~White~Black~1~Microsoft Sans Serif, 15.75,Bold~True~True~
+Text_Box.Feedrate~Text_Box~0.000~False~True~True~~~0.000~~~Tab_Offsets~38~549~83~28~White~Black~1~Microsoft Sans Serif, 15.75,Bold~True~True~
+Text_Box.Probe.State~Text_Box~Idle~False~True~True~~~Idle~~~Tab_Jog_Probe~37~8~300~31~White~Black~0~Microsoft Sans Serif, 14.25,Bold~True~True~
+Text_Box.Probe.Diameter~Text_Box~0.100~False~False~False~Probe_Text_Box_Click~~0.100~~~Tab_Jog_Probe~37~521~92~31~Azure~Black~1~Microsoft Sans Serif, 14.25,Bold~True~True~
+Text_Box.Probe.Distance~Text_Box~0.250~False~False~False~Probe_Text_Box_Click~~0.250~~~Tab_Jog_Probe~37~318~92~31~Azure~Black~1~Microsoft Sans Serif, 14.25,Bold~True~True~
+Text_Box.Probe.Feedrate~Text_Box~5.0~False~False~False~Probe_Text_Box_Click~~5.0~~~Tab_Jog_Probe~37~419~92~31~Azure~Black~1~Microsoft Sans Serif, 14.25,Bold~True~True~
+Text_Box.Probe.Folder~Text_Box~C:\Old_Man\Fixture_Probing_Positons~False~True~True~~~C:\Old_Man\Fixture_Probing_Positons~~~Tab_Jog_Probe~76~127~486~31~White~Black~0~Microsoft Sans Serif, 12,Bold~True~True~
+Text_Box.Probe.File~Text_Box~Table_Probe_Positions.txt~False~True~True~~~Table_Probe_Positions.txt~~~Tab_Jog_Probe~118~127~486~31~White~Black~0~Microsoft Sans Serif, 12,Bold~True~True~
+Text_Box.Probe.Start.X~Text_Box~16.244~False~True~True~~~16.244~~~Tab_Jog_Probe~194~57~83~31~White~Black~1~Microsoft Sans Serif, 15.75,Bold~True~True~
+Text_Box.Probe.End.X~Text_Box~16.332~False~True~True~~~16.332~~~Tab_Jog_Probe~194~146~83~31~White~Black~1~Microsoft Sans Serif, 15.75,Bold~True~True~
+Text_Box.Probe.Surface.X~Text_Box~16.382~False~True~True~~~16.382~~~Tab_Jog_Probe~194~324~83~31~White~Black~1~Microsoft Sans Serif, 15.75,Bold~True~True~
+Text_Box.Probe.Gap.X~Text_Box~0.088~False~True~True~~~0.088~~~Tab_Jog_Probe~194~235~83~31~White~Black~1~Microsoft Sans Serif, 15.75,Bold~True~True~
+Text_Box.Probe.Start.Y~Text_Box~7.095~False~True~True~~~7.095~~~Tab_Jog_Probe~237~57~83~31~White~Black~1~Microsoft Sans Serif, 15.75,Bold~True~True~
+Text_Box.Probe.End.Y~Text_Box~7.249~False~True~True~~~7.249~~~Tab_Jog_Probe~237~146~83~31~White~Black~1~Microsoft Sans Serif, 15.75,Bold~True~True~
+Text_Box.Probe.Surface.Y~Text_Box~7.299~False~True~True~~~7.299~~~Tab_Jog_Probe~237~324~83~31~White~Black~1~Microsoft Sans Serif, 15.75,Bold~True~True~
+Text_Box.Probe.Gap.Y~Text_Box~0.154~False~True~True~~~0.154~~~Tab_Jog_Probe~237~235~83~31~White~Black~1~Microsoft Sans Serif, 15.75,Bold~True~True~
+Text_Box.Probe.Start.Z~Text_Box~4.918~False~True~True~~~4.918~~~Tab_Jog_Probe~280~57~83~31~White~Black~1~Microsoft Sans Serif, 15.75,Bold~True~True~
+Text_Box.Probe.End.Z~Text_Box~4.808~False~True~True~~~4.808~~~Tab_Jog_Probe~280~146~83~31~White~Black~1~Microsoft Sans Serif, 15.75,Bold~True~True~
+Text_Box.Probe.Surface.Z~Text_Box~4.758~False~True~True~~~4.758~~~Tab_Jog_Probe~280~324~83~31~White~Black~1~Microsoft Sans Serif, 15.75,Bold~True~True~
+Text_Box.Probe.Gap.Z~Text_Box~0.110~False~True~True~~~0.110~~~Tab_Jog_Probe~280~235~83~31~White~Black~1~Microsoft Sans Serif, 15.75,Bold~True~True~
+Text_Box.Probe.Center.Gap.X_Plus~Text_Box~0.054~False~True~True~~~0.054~~~Tab_Jog_Probe~94~891~87~31~White~Black~1~Microsoft Sans Serif, 15.75,Bold~True~True~
+Text_Box.Probe.Center.Gap.X_Minus~Text_Box~0.055~False~True~True~~~0.055~~~Tab_Jog_Probe~94~647~87~31~White~Black~1~Microsoft Sans Serif, 15.75,Bold~True~True~
+Text_Box.Probe.Center.Gap.Y_Plus~Text_Box~0.059~False~True~True~~~0.059~~~Tab_Jog_Probe~57~771~87~31~White~Black~1~Microsoft Sans Serif, 15.75,Bold~True~True~
+Text_Box.Probe.Center.Gap.Y_Minus~Text_Box~0.047~False~True~True~~~0.047~~~Tab_Jog_Probe~131~771~87~31~White~Black~1~Microsoft Sans Serif, 15.75,Bold~True~True~
+Text_Box.Probe.Center.XY~Text_Box~5.422, 6.463~False~True~True~ 3.960~~5.422, 6.463~~~Tab_Jog_Probe~94~737~151~31~White~Black~1~Microsoft Sans Serif, 15.75,Bold~True~True~
+Text_Box.Probe.Center.Delta.X~Text_Box~0.001~False~True~True~~~0.001~~~Tab_Jog_Probe~94~982~87~31~White~Black~1~Microsoft Sans Serif, 15.75,Bold~True~True~
+Text_Box.Probe.Center.Delta.Y~Text_Box~0.012~False~True~True~~~0.012~~~Tab_Jog_Probe~168~771~87~31~White~Black~1~Microsoft Sans Serif, 15.75,Bold~True~True~
+Text_Box.Probe.Safe_Z~Text_Box~2.000~False~False~False~Probe_Text_Box_Click~~2.000~~~Tab_Jog_Probe~153~1420~87~31~Azure~Black~1~Microsoft Sans Serif, 15.75,Bold~True~True~
+Text_Box.Probe.Set_Gap~Text_Box~.1~False~False~False~Probe_Text_Box_Click~~.1~~~Tab_Jog_Probe~258~1420~100~31~Azure~Black~1~Microsoft Sans Serif, 15.75,Bold~True~True~
+Text_Box.Move.X_Plus~Text_Box~44.000~False~False~False~Move_Text_Box_Click~~44.000~~~Tab_Jog_Probe~380~1297~100~31~Azure~Black~1~Microsoft Sans Serif, 15.75,Bold~True~True~
+Text_Box.Move.X_Minus~Text_Box~1.000~False~False~False~Move_Text_Box_Click~~1.000~~~Tab_Jog_Probe~381~1085~100~31~Azure~Black~1~Microsoft Sans Serif, 15.75,Bold~True~True~
+Text_Box.Move.Y_Plus~Text_Box~5.000~False~False~False~Move_Text_Box_Click~~5.000~~~Tab_Jog_Probe~328~1190~100~31~Azure~Black~1~Microsoft Sans Serif, 15.75,Bold~True~True~
+Text_Box.Move.Y_Minus~Text_Box~2.000~False~False~False~Move_Text_Box_Click~~2.000~~~Tab_Jog_Probe~569~1190~100~31~Azure~Black~1~Microsoft Sans Serif, 15.75,Bold~True~True~
+Text_Box.Move.Z_Up~Text_Box~5.000~False~False~False~Move_Text_Box_Click~~5.000~~~Tab_Jog_Probe~361~890~83~31~Azure~Black~1~Microsoft Sans Serif, 15.75,Bold~True~True~
+Text_Box.Move.Z_Down~Text_Box~3.000~False~False~False~Move_Text_Box_Click~~3.000~~~Tab_Jog_Probe~535~890~83~31~Azure~Black~1~Microsoft Sans Serif, 15.75,Bold~True~True~
+Text_Box.Offset.X~Text_Box~2.297~False~False~False~~~2.297~~~Tab_Offsets~38~318~97~28~Gainsboro~Black~1~Microsoft Sans Serif, 15.75,Bold~True~True~
+Text_Box.Offset.Y~Text_Box~3.492~False~False~False~~~3.492~~~Tab_Offsets~73~318~97~28~Gainsboro~Black~1~Microsoft Sans Serif, 15.75,Bold~True~True~
+Text_Box.Offset.Z~Text_Box~3.554~False~False~False~~~3.554~~~Tab_Offsets~108~318~97~28~Red~Black~1~Microsoft Sans Serif, 15.75,Bold~True~True~
+Text_Box.Fixture_Offset.Folder~Text_Box~C:\Old_Man\Products\Jewelry Box Solid\MAN\Offsets\Inlay~False~True~True~~~C:\Old_Man\Products\Jewelry Box Solid\MAN\Offsets\Inlay~~~Tab_Offsets~20~131~843~31~White~Black~0~Microsoft Sans Serif, 12,Bold~True~False~
+Text_Box.Fixture_Offset.File~Text_Box~Jewelry Box Inlay.off~False~True~True~~~Jewelry Box Inlay.off~~~Tab_Offsets~62~131~843~31~White~Black~0~Microsoft Sans Serif, 12,Bold~True~False~
+Text_Box.Fixture_Offset.Material.Top~Text_Box~1.881~False~False~False~Fixture_Offset_Text_Boxes~~1.881~~~Tab_Offsets~399~264~104~31~Azure~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
+Text_Box.Fixture_Offset.Material.Bottom~Text_Box~0.295~False~False~False~Fixture_Offset_Text_Boxes~~0.295~~~Tab_Offsets~439~264~104~31~Azure~Black~1~Microsoft Sans Serif, 15.75,Bold~False~False~
+Text_Box.Fixture_Offset.Material.Thickness~Text_Box~0.500~False~False~False~Fixture_Offset_Text_Boxes~~0.500~~~Tab_Offsets~479~264~104~31~Azure~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
+Text_Box.Fixture_Offset.Original.X~Text_Box~2.297~False~True~True~~~2.297~~~Tab_Offsets~166~188~104~31~White~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
+Text_Box.Fixture_Offset.Original.Y~Text_Box~3.492~False~True~True~~~3.492~~~Tab_Offsets~212~188~104~31~White~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
+Text_Box.Fixture_Offset.Original.Z~Text_Box~3.554~False~True~True~~~3.554~~~Tab_Offsets~258~188~104~31~White~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
+Text_Box.Fixture_Offset.Delta.X~Text_Box~0.000~False~True~True~~~0.000~~~Tab_Offsets~166~298~104~31~White~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
+Text_Box.Fixture_Offset.Delta.Y~Text_Box~0.000~False~True~True~~~0.000~~~Tab_Offsets~212~298~104~31~White~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
+Text_Box.Fixture_Offset.Delta.Z~Text_Box~0.000~False~True~True~~~0.000~~~Tab_Offsets~258~298~104~31~White~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
+Text_Box.Fixture_Offset.Total.X~Text_Box~2.297~False~True~True~~~2.297~~~Tab_Offsets~166~408~104~31~White~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
+Text_Box.Fixture_Offset.Total.Y~Text_Box~3.492~False~True~True~~~3.492~~~Tab_Offsets~212~408~104~31~White~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
+Text_Box.Fixture_Offset.Total.Z~Text_Box~3.554~False~True~True~~~3.554~~~Tab_Offsets~258~408~104~31~White~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
+Text_Box.Fixture_Offset.Increment~Text_Box~0.010~False~False~False~Fixture_Offset_Text_Boxes~~0.010~~~Tab_Offsets~212~729~66~31~Azure~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
+Text_Box.Tool.Change.X~Text_Box~19.916~False~False~False~Tool_Text_Boxes~~19.916~~~Tab_Offsets~404~895~99~31~Azure~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
+Text_Box.Tool.Change.Y~Text_Box~0.000~False~False~False~Tool_Text_Boxes~~0.000~~~Tab_Offsets~404~1005~99~31~Azure~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
+Text_Box.Tool.Change.Z~Text_Box~6.000~False~False~False~Tool_Text_Boxes~~6.000~~~Tab_Offsets~404~1111~99~31~Azure~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
+Text_Box.Tool.Seat.X~Text_Box~19.916~False~False~False~Tool_Text_Boxes~~19.916~~~Tab_Offsets~444~895~99~31~Azure~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
+Text_Box.Tool.Seat.Y~Text_Box~0.000~False~False~False~Tool_Text_Boxes~~0.000~~~Tab_Offsets~444~1005~99~31~Azure~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
+Text_Box.Tool.Seat.Z~Text_Box~6.000~False~False~False~Tool_Text_Boxes~~6.000~~~Tab_Offsets~444~1111~99~31~Azure~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
+Text_Box.Tool.Measure.X~Text_Box~8.000~False~False~False~Tool_Text_Boxes~~8.000~~~Tab_Offsets~484~895~99~31~Azure~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
+Text_Box.Tool.Measure.Y~Text_Box~7.000~False~False~False~Tool_Text_Boxes~~7.000~~~Tab_Offsets~484~1005~99~31~Azure~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
+Text_Box.Tool.Measure.Z~Text_Box~5.500~False~False~False~Tool_Text_Boxes~Tool_Text_Boxes~5.500~~~Tab_Offsets~484~1111~99~31~Azure~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
+Text_Box.Tool.Park.X~Text_Box~0.000~False~False~False~Tool_Text_Boxes~~0.000~~~Tab_Offsets~524~895~99~31~Azure~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
+Text_Box.Tool.Park.Y~Text_Box~0.000~False~False~False~Tool_Text_Boxes~~0.000~~~Tab_Offsets~524~1005~99~31~Azure~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
+Text_Box.Tool.Park.Z~Text_Box~6.000~False~False~False~Tool_Text_Boxes~Tool_Text_Boxes~6.000~~~Tab_Offsets~524~1111~99~31~Azure~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
+Text_Box.Square.X_Plus~Text_Box~2.000~False~False~False~Square_Text_Boxes~~2.000~~~Tab_Offsets~335~1138~100~31~Azure~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
+Text_Box.Square.X_Minus~Text_Box~0.000~False~False~False~Square_Text_Boxes~~0.000~~~Tab_Offsets~335~707~100~31~Azure~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
+Text_Box.Square.Y_Plus~Text_Box~2.000~False~False~False~Square_Text_Boxes~~2.000~~~Tab_Offsets~38~401~100~31~Azure~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
+Text_Box.Square.Y_Minus~Text_Box~0.000~False~False~False~Square_Text_Boxes~~0.000~~~Tab_Offsets~496~401~100~31~Azure~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
+Text_Box.Square.Z~Text_Box~5.000~False~False~False~Square_Text_Boxes~~5.000~~~Tab_Offsets~445~926~100~31~Azure~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
+Text_Box.Square.Gap.X_Plus~Text_Box~0.047~False~True~True~~~0.047~~~Tab_Offsets~208~507~100~31~White~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
+Text_Box.Square.Gap.X_Minus~Text_Box~0.054~False~True~True~~~0.054~~~Tab_Offsets~323~507~100~31~White~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
+Text_Box.Square.Gap.Y_Plus~Text_Box~0.052~False~True~True~~~0.052~~~Tab_Offsets~196~1032~100~31~White~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
+Text_Box.Square.Gap.Y_Minus~Text_Box~0.035~False~True~True~~~0.035~~~Tab_Offsets~196~820~100~31~White~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
+Text_Box.Square.Error_X~Text_Box~-0.007~False~True~True~Square_Text_Boxes~~-0.007~~~Tab_Offsets~264~507~100~31~White~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
+Text_Box.Square.Error_Y~Text_Box~0.017~False~True~True~Square_Text_Boxes~~0.017~~~Tab_Offsets~196~926~100~31~White~Black~1~Microsoft Sans Serif, 15.75,Bold~True~False~
 Hot_Key.Ctrl_Alt_D1~Hot_Key~Ctrl_Alt_D1~False~False~False~Pendant_Handler_Down~Pendant_Handler_Up~
 Hot_Key.Ctrl_Alt_D2~Hot_Key~Ctrl_Alt_D2~False~False~False~Pendant_Handler_Down~Pendant_Handler_Up~
 Hot_Key.Ctrl_Alt_D3~Hot_Key~Ctrl_Alt_D3~False~False~False~Pendant_Handler_Down~Pendant_Handler_Up~
