@@ -4,7 +4,10 @@ Chip uses a Synthetos TinyG controller as a hardware interface between the softw
 
 You will need to install the Micosoft Dot Net Framework 4.6
 this a link to the download site https://www.microsoft.com/en-us/download/details.aspx?id=48130
+
+You also need to install the Microsoft Visual Powerpacks here if you wish to build the application:
+https://www.microsoft.com/en-us/download/details.aspx?id=25169
+
 After installing the framework, download the files to a directory and start Chip.exe. 
 
 There is a .pdf file in the Help directory that gives an overview of the application.
-
